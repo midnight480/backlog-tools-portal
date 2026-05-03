@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backlog Tools Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .tool-card {
+            transition: all 0.2s ease-in-out;
+        }
+        .tool-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1), 0 8px 10px -6px rgba(59, 130, 246, 0.1);
+            border-color: #bfdbfe;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 min-h-screen font-sans text-slate-800">
+    <div class="max-w-5xl mx-auto p-6 py-12">
+        <header class="text-center mb-16">
+            <h1 class="text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+                <span class="text-blue-600">Backlog</span> Tools Portal
+            </h1>
+            <p class="text-lg text-slate-500 max-w-2xl mx-auto">
+                Backlogをより便利に活用するための専用ツール群。APIを利用した一括処理やデータ抽出機能を提供します。
+            </p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Tool 1: Batch Delete -->
+            <a href="https://backlog-batch-delete-issues.midnight480.workers.dev/" class="tool-card block bg-white rounded-2xl p-6 border border-slate-200">
+                <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                    </svg>
+                </div>
+                <h2 class="text-xl font-bold text-slate-900 mb-2">課題の一括削除</h2>
+                <p class="text-slate-500 text-sm leading-relaxed">
+                    複数の課題を一括で削除するツール。条件を指定して大量の不要な課題を素早く整理できます。
+                </p>
+            </a>
+
+            <!-- Tool 2: Export Issues -->
+            <a href="https://github.com/midnight480/backlogup" target="_blank" rel="noopener noreferrer" class="tool-card block bg-white rounded-2xl p-6 border border-slate-200">
+                <div class="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                </div>
+                <h2 class="text-xl font-bold text-slate-900 mb-2">課題の一括エクスポート</h2>
+                <p class="text-slate-500 text-sm leading-relaxed">
+                    プロジェクトの課題をCSV形式などで抽出・エクスポートするツール。カスタム分析やレポート作成に便利です。
+                </p>
+            </a>
+
+            <!-- Tool 3: Space User List -->
+            <a href="https://backlog-user-list.midnight480.workers.dev/" class="tool-card block bg-white rounded-2xl p-6 border border-slate-200">
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                </div>
+                <h2 class="text-xl font-bold text-slate-900 mb-2">ユーザー＆プロジェクト抽出</h2>
+                <p class="text-slate-500 text-sm leading-relaxed">
+                    プロジェクト未参加のユーザー検出や、最終ログイン日時の把握など、スペース内の全アカウント状況を一括で集計・出力します。
+                </p>
+            </a>
+
+            <!-- Tool 4: Migration Support -->
+            <a href="https://github.com/midnight480/backlog-migration-support-tool" target="_blank" rel="noopener noreferrer" class="tool-card block bg-white rounded-2xl p-6 border border-slate-200">
+                <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                    </svg>
+                </div>
+                <h2 class="text-xl font-bold text-slate-900 mb-2">Backlog移行サポートツール</h2>
+                <p class="text-slate-500 text-sm leading-relaxed">
+                    プロジェクトのデータ移行やマッピングを支援するツール。ブラウザ上でログの解析などを実行できます。
+                </p>
+            </a>
+        </div>
+        
+        <footer class="mt-20 text-center text-slate-400 text-sm border-t border-slate-200 pt-8">
+            <p>&copy; 2026 midnight480. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
